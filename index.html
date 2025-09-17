@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Orçamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Gerenciador de Orçamento</h1>
+
+    <div class="saldo-container">
+      <h3>Seu Saldo</h3>
+      <h1 id="saldo">R$ 0,00</h1>
+    </div>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Receitas</h4>
+        <p id="dinheiro-receita" class="dinheiro mais">R$ 0,00</p>
+      </div>
+      <div>
+        <h4>Despesas</h4>
+        <p id="dinheiro-despesa" class="dinheiro menos">R$ 0,00</p>
+      </div>
+    </div>
+
+    <h3>Histórico de Transações</h3>
+    <ul id="lista" class="lista"></ul>
+
+    <h3>Adicionar nova transação</h3>
+    <form id="form">
+      <div class="form-control">
+        <label for="texto">Descrição</label>
+        <input type="text" id="texto" placeholder="Digite a descrição...">
+      </div>
+      <div class="form-control">
+        <label for="valor">Valor <br> (negativo - despesa, positivo - receita)</label>
+        <input type="number" id="valor" placeholder="Digite o valor...">
+      </div>
+      <button class="btn">Adicionar transação</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
